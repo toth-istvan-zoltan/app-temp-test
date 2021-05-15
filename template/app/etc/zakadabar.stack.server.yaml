@@ -1,0 +1,19 @@
+database:
+  driverClassName: @sqlDriver@
+  jdbcUrl: @sqlUrl@
+  username: @sqlUser@
+  password: @sqlPassword@
+
+traceRouting: false
+staticResources: ./var/static
+
+modules:
+  - @packageName@.backend.Module
+
+#ktor:
+#  port: 8080
+#  websocket:
+#    pingPeriod: 60
+#    timeout: 15
+#    maxFrameSize: 1000000
+#    masking: false
